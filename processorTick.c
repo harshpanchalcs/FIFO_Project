@@ -3,7 +3,7 @@
 #include <unistd.h>
 int counter=0;
 
-
+void SIG_OUTPUT_COMPARE1A( void ) __attribute__ (( signal, naked ));
 void processorTick()
 {
 	counter++;
@@ -15,16 +15,24 @@ void processorTick()
 }
 
 
-void SIG_OUTPUT_COMPARE( void ) __attribute__ ( ( signal ) )
+void SIG_OUTPUT_COMPARE1A( void )
 {
     /* ISR C code for RTOS tick. */
-    processorTick();
-    printf("start");
+	portSAVE_CONTEXT();
+	
+	printf("start\n");
+	processorTick();
+	
+	portRESTORE_CONTEXT();
+
+	asm volatile ( "ret" );
+	
+	
 }
 
 int main()
 {
-	SIG_OUTPUT_COMPARE();
+	SIG_OUTPUT_COMPARE1A();
 	return 0;
 }
  
