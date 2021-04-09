@@ -5,7 +5,7 @@
 #include <linux/compiler_types.h>
 #include <linux/stringify.h>
 #include <linux/export.h>
-#include <asm/linkage.h>
+#include <asm-generic/linkage.h>
 
 /* Some toolchains use other characters (e.g. '`') to mark new line in macro */
 #ifndef ASM_NL

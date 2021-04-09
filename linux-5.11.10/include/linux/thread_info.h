@@ -56,7 +56,7 @@ enum syscall_work_bit {
 #define SYSCALL_WORK_SYSCALL_EXIT_TRAP	BIT(SYSCALL_WORK_BIT_SYSCALL_EXIT_TRAP)
 #endif
 
-#include <asm/thread_info.h>
+#include <linux/thread_info.h>
 
 #ifdef __KERNEL__
 

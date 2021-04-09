@@ -9,7 +9,7 @@
 
 #include <uapi/linux/sched.h>
 
-#include <asm/current.h>
+#include <asm-generic/current.h>
 
 #include <linux/pid.h>
 #include <linux/sem.h>

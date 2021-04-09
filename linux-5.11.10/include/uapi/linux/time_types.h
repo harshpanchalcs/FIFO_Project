@@ -28,8 +28,15 @@ struct __kernel_old_timeval {
 };
 #endif
 
+#ifndef __kernel_old_time_t
+struct __kernel_old_time_t {
+	__kernel_long_t tv_sec;
+	__kernel_long_t tv_usec;
+};
+#endif
+
 struct __kernel_old_timespec {
-	__kernel_old_time_t	tv_sec;		/* seconds */
+	__kernel_long_t	tv_sec;		/* seconds */
 	long			tv_nsec;	/* nanoseconds */
 };
 
