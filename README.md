@@ -36,7 +36,8 @@ References
 6. A Testbed for Evaluating Scheduling Algorithms
 	https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwid8PvrvrnvAhVS4zgGHfzEBNAQFjAAegQIBBAD&url=https%3A%2F%2Fwww.cl.cam.ac.uk%2Fteaching%2Fprojects%2Fmodelprojs%2Fscheduling.pdf&usg=AOvVaw02fi7MtuLL6iIoMggF-pSR
  
-7. 
+7. Source code analysis of linux Scheduler - Overview
+	https://programmer.ink/think/source-code-analysis-of-linux-scheduler-overview.html
 
 
 
