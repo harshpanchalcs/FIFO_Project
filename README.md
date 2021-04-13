@@ -38,6 +38,9 @@ References
  
 7. Source code analysis of linux Scheduler - Overview
 	https://programmer.ink/think/source-code-analysis-of-linux-scheduler-overview.html
+	
+8. 
+	https://github.com/riscvarchive/riscv-linux/issues/120
 
 
 
