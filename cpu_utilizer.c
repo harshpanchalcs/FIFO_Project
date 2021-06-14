@@ -2,7 +2,7 @@
 #include <time.h>
 #include <pthread.h>
 
-#define no_threads 10
+#define no_threads 2
 
 void *one(void *arg)
 {
@@ -11,7 +11,7 @@ void *one(void *arg)
 	    struct timespec begin, end; 
 	    clock_gettime(CLOCK_REALTIME, &begin);
     
-	long int x=10000000,y;
+	long int x=100000000,y;
 	while(x--)
 	{
 		y = 1000;
